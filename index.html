@@ -36,7 +36,7 @@
                         <a class="nav-link text-white" href="#projects">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#skills">Hobbies</a>
+                        <a class="nav-link text-white" href="#hobbies">Hobbies</a>
                     </li>
                 </ul>
             </div>
@@ -76,61 +76,35 @@
             </div>
         </div>
 
-        <hr>
-        
-        <!-- Timeline Section -->
+        <!-- Experience Section -->
         <div class="row pt-2" id="experience">
             <div class="col-md-12">
-              <h3>Timeline</h3>
-              <div class="timeline">
-                <!-- Timeline Item 1: Software Engineering Intern -->
-                <div class="timeline-item">
-                  <div class="timeline-content">
-                    <h4>
-                      Software Engineering Intern 
-                      <span class="timeline-date">October 2024 - Present</span>
-                    </h4>
-                    <h5>EAB Consulting (Remote)</h5>
+                <h3>Work Experiences</h3>
+                <!-- Software Engineering Intern -->
+                <div class="mb-4">
+                    <p>
+                        <b>Software Engineering Intern</b> at <b>EAB</b> (Remote)<br>
+                        <i>October 2024 - Present</i>
+                    </p>
                     <ul>
-                      <li>Developed and deployed an AI-integrated system using AWS Lambda, DynamoDB, and Bedrock to analyze employee sentiment during live Q&amp;A sessions.</li>
-                      <li>Reduced LLM response latency from 20 to 13 seconds, achieving a 35% performance improvement.</li>
-                      <li>Implemented an automated monitoring system that flags inappropriate comments with 98% accuracy.</li>
+                        <li>Developing AI-integrated Q&A system that uses LLM to automate processes in EAB's employee feedback service</li>
+                        <li>I built the AI backend functionalities with AWS Bedrock :D thanks to my team for entrusting me with this task... it is so much fun!</li>
                     </ul>
-                  </div>
                 </div>
-                <!-- Timeline Item 2: Computer Vision Hardware Engineer -->
-                <div class="timeline-item">
-                  <div class="timeline-content">
-                    <h4>
-                      Computer Vision Hardware Engineer 
-                      <span class="timeline-date">September 2023 - January 2024</span>
-                    </h4>
-                    <h5>ZT Group, Cornell University (Ithaca, NY)</h5>
+                <!-- Machine Learning Researcher -->
+                <div class="mb-4">
+                    <p>
+                        <b>Machine Learning Researcher</b> at <b>ZT Group, Cornell University</b> (Ithaca, NY)<br>
+                        <i>March 2023 - May 2024</i>
+                    </p>
                     <ul>
-                      <li>Automated a computer vision microscope system for identifying 2D semiconductor material flake thickness.</li>
-                      <li>Improved measurement efficiency by 800% compared to manual control.</li>
-                      <li>Developed a regression model to predict flake thickness based on color intensity with an average error of approximately 20%.</li>
+                        <li>Implemented a hybrid Transformer model in PyTorch to predict <a href="https://en.wikipedia.org/wiki/Phonon">phonon dispersion</a> 
+                            of semiconductor materials given their <a href="https://www.jeol.com/words/emterms/20121023.080458.php#gsc.tab=0">thermal diffuse scattering</a></li>
+                        <li>This is meaningful as the task is computationally heavy using physics formulas, and machine learning makes the prediction faster!</li>
                     </ul>
-                  </div>
                 </div>
-                <!-- Timeline Item 3: Machine Learning Researcher -->
-                <div class="timeline-item">
-                  <div class="timeline-content">
-                    <h4>
-                      Machine Learning Researcher 
-                      <span class="timeline-date">March 2023 - Present</span>
-                    </h4>
-                    <h5>ZT Group, Cornell University (Ithaca, NY)</h5>
-                    <ul>
-                      <li>Implemented a hybrid model in PyTorch with a Swin Visual Transformer, LSTM, and Multi-Head Attention for material science data analysis.</li>
-                      <li>Achieved a R-squared score of 0.93 and designed a CNN-based model with 32× fewer parameters, reducing training time by 60×.</li>
-                      <li>Expanded the dataset by 94.4% through scraping Kyoto University’s open-source phonon database and applied unsupervised learning techniques to minimize data discrepancies.</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
             </div>
-          </div>
+        </div>
           
 
         <hr>
@@ -139,6 +113,16 @@
         <div class="row pt-2" id="projects">
             <div class="col-md-12">
                 <h3>Projects</h3>
+                <div class="mb-4">
+                    <p>
+                        <b>Tiger Mom Agent</b><br>
+                        <i>March 2025</i>
+                    </p>
+                    <ul>
+                        <li>A desktop application that takes a screenshot of the user's device every 60 seconds and uses vision AI to determine whether or not the user is focused on their task<li>
+                        <li>Personalized: The user can specify what usually distracts them from work while using their computer</li>
+                    </ul>
+                </div>
                 <!-- Real-time AI Stock News Analyzer -->
                 <div class="mb-4">
                     <p>
@@ -148,19 +132,7 @@
                     <ul>
                         <li>Designed an AI-integrated application to extract key information from real-time stock news based on a given ticker.</li>
                         <li>Pipelined user queries, News API, and OpenAI LLMs for streamlined information delivery.</li>
-                        <li>Optimized data retrieval using AWS S3 with a 5-minute interval storage mechanism, reducing query latency from 90 to 15 seconds.</li>
-                    </ul>
-                </div>
-                <!-- CADParser Paper Implementation -->
-                <div class="mb-4">
-                    <p>
-                        <b>CADParser Paper Implementation</b><br>
-                        <i>April 2024 - May 2024</i>
-                    </p>
-                    <ul>
-                        <li>Implemented a machine learning paper from scratch using PyTorch with no available public code.</li>
-                        <li>Built an encoder-decoder Transformer model incorporating GCN and an Autoregressive Decoder to generate CAD command sequences.</li>
-                        <li>Trained on the Fusion360 dataset of over 8000 CAD models with construction command sequence labels.</li>
+                        <li>My friend Isaac and I built this for Big Red Hacks, a Cornell-hosted hackathon. He built the frontend and storage section, and I built the AI functionalities.</li>
                     </ul>
                 </div>
                 <!-- Poker Game -->
@@ -180,18 +152,19 @@
         <hr>
 
         <!-- Technical Skills Section -->
-        <div class="row pt-2" id="skills">
+        <div class="row pt-2" id="hobbies">
             <div class="col-md-12">
-                <h3>Technical Skills</h3>
+                <h3>Hobbies</h3>
                 <p>
-                    <b>Languages:</b> Python, Java, Javascript, C++, CSS, HTML, OCaml, SQL<br>
-                    <b>Frameworks:</b> AWS, PyTorch, Flask<br>
-                    <b>Developer Tools:</b> Jupyter Notebooks, Git, Hugging Face, VS Code, IntelliJ, Kaggle, Google Colab, Node.js, Figma, MySQL, Docker<br>
-                    <b>Libraries:</b> React, scikit-learn, NumPy, Pandas, Gradient AI, Pillow, Matplotlib, Beautiful Soup
+                    <ul>
+                        <li>Gym! Health is crucially important and I try to go regularly. Lately, I have been obsessed with running on the treadmill and taking post-workout cold showers.</li>
+                        <li>Grilling Steak! I love making medium-rare steak. The guests and my roommates seem to enjoy my grilled steaks very much. This <a href="https://www.amazon.com/McCormick-Grill-Sodium-Montreal-Seasoning/dp/B0761YY3K2/ref=asc_df_B0761YY3K2?mcid=a828b3bdc0c337c38db88bcbaaf417ab&tag=hyprod-20&linkCode=df0&hvadid=693624286036&hvpos=&hvnetw=g&hvrand=18339357879670084184&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9005779&hvtargid=pla-568871159722&th=1">Montreal steak seasoning</a> has been the MVP.</li>
+                        <li>Books! I like to listen to books during commute or gym as it makes me feel like I am fully utilizing my time. One of the favorite books I have listened to in 2025, as of March, is The Challenger Sale by Brent Adamson and Dixon Matthew.</li>
+                        <li>Lex Fridman Podcast! I listen to the AI episodes that seem interesting.</li>
+                    </ul>
                 </p>
             </div>
         </div>
-
         <hr>
     </div>
 </body>
