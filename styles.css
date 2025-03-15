@@ -1,0 +1,51 @@
+/* Timeline container */
+.timeline {
+    position: relative;
+    margin: 20px 0;
+    padding: 10px 0;
+    border-left: 3px solid #ddd;
+  }
+  
+  /* Each timeline item */
+  .timeline-item {
+    position: relative;
+    margin-bottom: 20px;
+    padding-left: 20px;
+  }
+  
+  /* The dot on the timeline */
+  .timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: 5px;
+    width: 10px;
+    height: 10px;
+    background-color: #007bff;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px #007bff;
+  }
+  
+  /* Timeline content box */
+  .timeline-content {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  /* Date styling */
+  .timeline-date {
+    float: right;
+    font-size: 0.9em;
+    color: #777;
+  }
+  
+  /* Clear floats */
+  .timeline-content:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
